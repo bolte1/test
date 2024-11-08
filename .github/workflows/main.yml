@@ -5,11 +5,11 @@ on:
     branches:
       - main
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   run_sharp_workflow:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - name: Check out the code
